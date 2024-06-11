@@ -1,29 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo de Adivinhação</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <h1>Bem-vindo ao Jogo de Adivinhação!</h1>
+        <h1>Bem vindo ao Jogo de Adivinhação!</h1>
         <form id="nameForm">
             <label for="name">Digite seu nome:</label>
             <input type="text" id="name" name="name" required>
+            <label for="difficulty">Escolha a dificuldade:</label>
+            <select id="difficulty" name="difficulty">
+                <option value="easy">Facil (1-10)</option>
+                <option value="medium">Medio (1-50)</option>
+                <option value="hard">Dificil (1-100)</option>
+                <option value="impossible">Impossivel (1-1000)</option>
+            </select>
             <button type="submit">Jogar</button>
+            <button onclick="location.href='score.html'">Ver Pontuações</button>
         </form>
     </div>
-
-    <script>
-        document.getElementById('nameForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const playerName = document.getElementById('name').value;
-            localStorage.setItem('playerName', playerName);
-            window.location.href = 'game.html';
-        });
-    </script>
+    <script src="script.js"></script>
+    <main><footer>Rafael Borges Moog - Todos os direitos reservados - 2024</footer></main>
 </body>
-</html>
 
+</html>

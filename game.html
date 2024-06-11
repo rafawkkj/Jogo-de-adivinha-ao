@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <div class="container">
         <h1 id="greeting"></h1>
-        <p>Adivinhe o número entre 1 e <span id="maxNumber"></span>:</p>
+        <p id="rangeText"></p>
         <form id="guessForm">
             <input type="number" id="guess" name="guess" required>
             <button type="submit">Adivinhar</button>
         </form>
         <p id="feedback"></p>
         <button id="playAgain" style="display: none;">Jogar Novamente</button>
+        <button onclick="location.href='score.html'">Pontuações</button>
+        <button onclick="location.href='index.html'">Voltar</button>
     </div>
+    <main>
+        <footer>Rafael Borges Moog - Todos os direitos reservados - 2024</footer>
+    </main>
 </body>
+
 </html>
-
-
-
-
-
-
