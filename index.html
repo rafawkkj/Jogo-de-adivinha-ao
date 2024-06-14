@@ -6,9 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo de Adivinhação</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            transition: background-color 0.5s ease;
+        }
+    </style>
 </head>
 
 <body>
+
+    <button id="cordefundo" onclick="alternarCorDeFundo()">Alternar Cor de Fundo</button>
+    <script>
+        function alternarCorDeFundo() {
+            if (document.body.style.backgroundColor === 'black') {
+                document.body.style.backgroundColor = 'white';
+            } else {
+                document.body.style.backgroundColor = 'black';
+            }
+        }
+    </script>
+
     <div class="container">
         <h1>Bem vindo ao Jogo de Adivinhação!</h1>
         <form id="nameForm">
@@ -23,10 +40,13 @@
             </select>
             <button type="submit">Jogar</button>
             <button onclick="location.href='score.html'">Ver Pontuações</button>
+            <button onclick="location.href='msgemail.html'">Verificar e-mail</button>
+
         </form>
     </div>
     <script src="script.js"></script>
-    <main><footer>Rafael Borges Moog - Todos os direitos reservados - 2024</footer></main>
+
 </body>
+<footer>Rafael Borges Moog - Todos os direitos reservados - 2024</footer>
 
 </html>

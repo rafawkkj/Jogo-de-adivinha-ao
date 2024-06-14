@@ -7,6 +7,17 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <button id="cordefundo" onclick="alternarCorDeFundo()">Alternar Cor de Fundo</button>
+
+    <script>
+        function alternarCorDeFundo() {
+            if (document.body.style.backgroundColor === 'black') {
+                document.body.style.backgroundColor = 'white';
+            } else {
+                document.body.style.backgroundColor = 'black';
+            }
+        }
+    </script>
         <div class="container">
             <h1>Placar</h1>
             <ul id="scoreList"></ul>
@@ -14,6 +25,7 @@
         </div>
     
         <script src="script.js"></script>
-        <main><footer>Rafael Borges Moog - Todos os direitos reservados - 2024</footer></main>
+      
     </body>
+    <footer>Rafael Borges Moog - Todos os direitos reservados - 2024</footer>
     </html>
