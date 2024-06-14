@@ -43,9 +43,8 @@ input[type="text"], input[type="number"], input[type="email"], input[name="messa
 }
 /* askdjhajhsda */
 
-
-
 button {
+    font-family: 'Press Start 2P', cursive;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -54,15 +53,10 @@ button {
     color: #fff;
     cursor: pointer;
 }
-
-<<<<<<< HEAD
 footer{
-=======
-/*/footer{
->>>>>>> c8b22b7994d92c0a31e35a32ef49ada09295432d
     background-color: gray;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
-}/*/
+}
